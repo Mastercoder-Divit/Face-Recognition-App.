@@ -1,0 +1,46 @@
+body
+{
+    background-image: linear-gradient(to right top, #ff0000, #ff0000, #2b00ff, #2b00ff, #ff0000, #ff0000);
+    border-radius: 50px;
+}
+
+#face
+{
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+}
+
+#accuracy
+{
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+}
+
+#camera
+{
+    border-radius: 50px;
+}
+
+#result
+{
+    border-radius: 50px;
+}
+
+#fr
+{
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    width: 55%;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Yeon Sung';
+    font-size: 35px;
+    letter-spacing: 10px;
+    margin-top: 80px;
+}

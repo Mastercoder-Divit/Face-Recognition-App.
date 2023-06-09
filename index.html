@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Face recognition app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class = "btn btn-default heading" id="fr">FACE RECOGNITION APP</h3> 
+      <br><br>
+      <br><br>
+
+      <p style="font-family: cursive; font-size: medium;">Model is trained to identify the following Faces: </p>
+      <br>
+
+      <b class = "name_of_faces">
+        <h4 style="font-family: cursive;">Father</h4>
+        <hr>
+        <h4 style="font-family: cursive;">Mother</h4>
+        <hr>
+        <h4 style="font-family: cursive;">Brother</h4>
+        <hr>
+        <h4 style="font-family: cursive;">Sister</h4>
+        <hr>
+      </b>
+
+      <label style="font-family: cursive; font-size: medium;">Webcam View - </label>
+      <div id="camera" style="border-radius: 50px;"></div>
+      <br><br>
+      <div id="result" style="border-radius: 50px;"></div>
+      <br><br>
+      <button onclick="take_snapshot();" style="background-image: linear-gradient(to right top, #ff8400, #ff8400, #e600ff, #e600ff, #ff8400, #ff8400); border-radius: 10px; font-size: medium; height: 5%;">Capture image</button>
+      <br><br>
+      <button onclick="check();" style="background-image: linear-gradient(to right top, #e600ff, #e600ff, #ff8400, #ff8400, #e600ff, #e600ff); border-radius: 10px; font-size: medium; height: 5%;">Identify face</button>
+      <br><br>
+
+      <p style="font-size: 22px;" id="face">Face :   <span id="result_face_name"></span></p>
+      <p style="font-size: 22px;" id="accuracy">Accuracy :  <span id="result_face_accuracy"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
